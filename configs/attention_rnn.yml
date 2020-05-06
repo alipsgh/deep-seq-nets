@@ -1,0 +1,8 @@
+embedding_size: 300
+hidden_size: 32
+num_hidden_layers: 1
+output_size: 4
+bidirectional: true
+dropout_rate: 0.8
+optimizer: adam
+learning_rate: 0.001

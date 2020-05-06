@@ -1,0 +1,8 @@
+num_channels: 256
+linear_size: 256
+seq_len: 300  # 1014 in original paper
+output_size: 4
+dropout_rate: 0.5
+optimizer: adam
+learning_rate: 0.001
+
