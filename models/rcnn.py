@@ -59,7 +59,6 @@ class RCNN(DeepSeqNet):
         out_features = self.dropout(out_features)
 
         logits = self.fc(out_features)
-        preds = self.softmax(logits)
 
-        return preds
+        return logits
 

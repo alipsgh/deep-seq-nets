@@ -62,7 +62,6 @@ class CharCNN(DeepSeqNet):
         conv_out = conv_out.view(conv_out.shape[0], -1)
 
         logits = self.fc_layers(conv_out)
-        preds = self.softmax(logits)
 
-        return preds
+        return logits
 

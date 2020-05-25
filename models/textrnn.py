@@ -55,7 +55,6 @@ class TextRNN(DeepSeqNet):
         # >> feature_vec: (batch_size, hidden_size * hidden_layers * num_directions) -> reshaping is for the linear layer
 
         logits = self.fc(feature_vec)
-        preds = self.softmax(logits)
 
-        return preds
+        return logits
 

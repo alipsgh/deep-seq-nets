@@ -54,7 +54,6 @@ class TextCNN(DeepSeqNet):
         feature_vector = self.dropout(feature_vector)
 
         logits = self.fc(feature_vector)
-        preds = self.softmax(logits)
 
-        return preds
+        return logits
 

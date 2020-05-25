@@ -33,6 +33,5 @@ class FastText(DeepSeqNet):
     def forward(self, x):
         embedded_sequence = self.embeddings(x)
         logits = self.fc_2(self.fc_1(embedded_sequence.mean(1)))
-        preds = self.softmax(logits)
-        return preds
+        return logits
 

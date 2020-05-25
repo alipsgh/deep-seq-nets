@@ -76,7 +76,6 @@ class AttentionRNN(DeepSeqNet):
         feature_vector = torch.cat([final_hidden_state, attention_out], dim=1)
         feature_vector = self.dropout(feature_vector)  # >> feature_vector: (batch_size, num_directions * hidden_size)
         logits = self.fc(feature_vector)
-        preds = self.softmax(logits)
 
-        return preds
+        return logits
 

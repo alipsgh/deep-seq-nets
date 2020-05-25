@@ -79,7 +79,6 @@ class Transformer(DeepSeqNet):
 
         e = e[-1, :, :]
         logits = self.fc(e)
-        preds = self.softmax(logits)
 
-        return preds
+        return logits
 
