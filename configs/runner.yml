@@ -5,5 +5,5 @@ embedding_source: pre-trained/embeddings/glove/glove.840B.300d.txt # char_one_ho
 batch_size: 8
 seq_len: # 300
 epochs: 16
-model: transformer
+model: textrnn
 seed: 313
